@@ -19,13 +19,23 @@ Echtzeit Multiplayer Texas Hold'em Poker Spiel mit TypeScript und Supabase.
 
 ## 🚀 Lokale Entwicklung
 
-```bash
-# Dependencies installieren
-npm install
+1.  **Dependencies installieren**:
+    ```bash
+    npm install
+    ```
 
-# Entwicklungsserver starten
-npm run dev
-```
+2.  **Environment Variables**:
+    Erstelle eine Datei namens `.env.local` im Hauptverzeichnis des Projekts und füge deine Supabase-Zugangsdaten ein:
+    ```bash
+    VITE_SUPABASE_URL=deine_supabase_url
+    VITE_SUPABASE_ANON_KEY=dein_supabase_anon_key
+    ```
+    *(Siehe [.env.example](./.env.example) für eine Vorlage)*
+
+3.  **Entwicklungsserver starten**:
+    ```bash
+    npm run dev
+    ```
 
 Öffne [http://localhost:5173](http://localhost:5173) im Browser.
 
@@ -35,25 +45,6 @@ npm run dev
 - [Changelog](./changelog.md)
 
 ---
-
-## 🚀 Coding in Antigravity Guide
-
-### Der Initiale Prompt
-Dies war der Prompt, der dieses Projekt gestartet hat:
-
-> **Entwickle ein Texas Hold'em Poker Spiel.**
->
-> **Prinzip:** Klassisches Texas Hold'em für 6-9 Spieler an einem Tisch.
-> **Frontend:** TypeScript, React, Vite (Modernes, "Premium" UI mit Animationen).
-> **Backend:** Supabase (für Echtzeit-Synchronisation via WebSockets/Broadcast, Datenbank und Edge Functions).
->
-> **Anforderungen:**
-> - Extrem schnelle Übertragung (Instant-Updates)
-> - Visuell ansprechendes Design (Dark Mode, Glassmorphism, 3D-Karten)
-> - Spielgeld-Währung
-> - Einfacher Einstieg (Name eingeben & Joinen)
->
-> Alternative falls Supabase nicht passt: Socket.io + Node.js (wurde aber zugunsten von Supabase verworfen).
 
 ## 🚀 Deployment & Setup
 
@@ -70,20 +61,6 @@ Dieses Projekt nutzt **Supabase Realtime Broadcast** für die schnelle Kommunika
 > [!NOTE]
 > Die ursprünglich geplante SQL-Struktur wird in dieser Version noch nicht aktiv genutzt, ist aber für zukünftige Persistenz vorbereitet.
 
-### 2. Rechtliche Hinweise & Haftungsausschluss
-
-**⚠️ WICHTIGER HINWEIS (Disclaimer)**
-
-Dieses Projekt dient ausschließlich als **Demonstration** für die Nutzung von Vercel und Supabase im Kontext von "Vibecoding".
-Es ist **nicht** für den produktiven Einsatz oder für Echtgeld-Glücksspiel gedacht.
-*   **Nutzung auf eigene Gefahr.**
-*   Bitte beachte stets Sicherheitsaspekte (z.B. Row Level Security, Validierung), bevor du Code in Produktion nimmst.
-*   Der Ersteller übernimmt keine Haftung für Schäden oder Datenverlust.
-
-### 3. Lizenz
-
-Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht. Siehe [LICENSE](./LICENSE) Datei für Details.
-
 ### 2. Vercel (Hosting & Deployment)
 
 Das Frontend ist für das Hosting auf **Vercel** optimiert.
@@ -94,9 +71,11 @@ Das Frontend ist für das Hosting auf **Vercel** optimiert.
     *   `VITE_SUPABASE_ANON_KEY`: Dein Supabase Anon Key
 3.  **Deploy**: Vercel erkennt automatisch `npm run build` und deployed die App.
 
-### 3. Rechtliche Hinweise & Haftungsausschluss
+---
 
-**⚠️ WICHTIGER HINWEIS (Disclaimer)**
+## ⚠️ Rechtliche Hinweise & Haftungsausschluss
+
+**WICHTIGER HINWEIS (Disclaimer)**
 
 Dieses Projekt dient ausschließlich als **Demonstration** für die Nutzung von Vercel und Supabase im Kontext von "Vibecoding".
 Es ist **nicht** für den produktiven Einsatz oder für Echtgeld-Glücksspiel gedacht.
@@ -104,6 +83,7 @@ Es ist **nicht** für den produktiven Einsatz oder für Echtgeld-Glücksspiel ge
 *   Bitte beachte stets Sicherheitsaspekte (z.B. Row Level Security, Validierung), bevor du Code in Produktion nimmst.
 *   Der Ersteller übernimmt keine Haftung für Schäden oder Datenverlust.
 
-### 4. Lizenz
+## 📄 Lizenz
 
 Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht. Siehe [LICENSE](./LICENSE) Datei für Details.
+
