@@ -13,7 +13,6 @@ function App() {
     nextRound,
     canCheck,
     canCall,
-    callAmount,
     minRaise,
     isMyTurn,
     turnTimeLeft
@@ -38,7 +37,6 @@ function App() {
       turnTimeLeft={turnTimeLeft}
       canCheck={canCheck}
       canCall={canCall}
-      callAmount={callAmount}
       minRaise={minRaise}
       onAction={performAction}
       onStartGame={startGame}
