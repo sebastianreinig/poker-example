@@ -1,0 +1,156 @@
+.card {
+  width: 70px;
+  height: 100px;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  font-family: 'Georgia', serif;
+}
+
+.card:hover {
+  transform: translateY(-8px) rotateX(5deg);
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.card.face-down {
+  background: linear-gradient(145deg, #1a3a6e, #0d2240);
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(255, 255, 255, 0.03) 10px,
+      rgba(255, 255, 255, 0.03) 20px
+    );
+}
+
+.card.face-down::before {
+  content: '♠♥♦♣';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgba(255, 215, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.card.flipping {
+  animation: flipCard 0.6s ease forwards;
+}
+
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.card-corner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.card-corner.bottom {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.card-rank {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-suit {
+  font-size: 16px;
+}
+
+.card.red .card-rank,
+.card.red .card-suit {
+  color: #dc2626;
+}
+
+.card.black .card-rank,
+.card.black .card-suit {
+  color: #1f2937;
+}
+
+.card-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+.card.red .card-center {
+  color: #dc2626;
+}
+
+.card.black .card-center {
+  color: #1f2937;
+}
+
+/* Small card variant */
+.card.small {
+  width: 50px;
+  height: 72px;
+  padding: 4px;
+}
+
+.card.small .card-rank {
+  font-size: 14px;
+}
+
+.card.small .card-suit {
+  font-size: 12px;
+}
+
+.card.small .card-center {
+  font-size: 22px;
+}
+
+/* Community cards styling */
+.card.community {
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+/* Winning card highlight */
+.card.winning {
+  animation: winningGlow 1s ease infinite alternate;
+}
+
+@keyframes winningGlow {
+  from {
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.3),
+      0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  to {
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.3),
+      0 0 30px rgba(255, 215, 0, 0.8);
+  }
+}
