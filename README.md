@@ -6,6 +6,14 @@ Echtzeit Multiplayer Texas Hold'em Poker Spiel mit TypeScript und Supabase.
 
 <img width="1386" height="865" alt="image" src="https://github.com/user-attachments/assets/06f7d71b-65f2-4809-aad6-5d1e081a48ff" />
 
+## 💡 Warum dieses Projekt?
+
+**Dieses Projekt wurde komplett gevibecoded mit Antigravity.**
+
+**Ziel:** Aufzeigen, wie einfach eine Anwendung live gebracht werden kann. Der Fokus lag darauf, **Vercel** für das Frontend-Hosting und **Supabase** als Backend-Lösung zu nutzen. Der Deployment-Aufwand ist dabei minimalst.
+
+Das Projekt wurde in **unter 30 Minuten erstellt** und zeigt eine lauffähige Version eines Online-Pokers, die nicht nur funktioniert, sondern auch gut aussieht. 🚀
+
 ## 🎮 Features
 
 - **Echtzeit-Multiplayer**: Sofortige Synchronisation aller Aktionen

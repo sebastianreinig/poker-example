@@ -23,6 +23,7 @@ Alle wichtigen Änderungen an diesem Projekt.
 - 📝 README für Vercel & Supabase optimiert
 - 🏷️ Projekt umbenannt in "Poker with Vercel and Supabase"
 - 🧹 README aufgeräumt & Local Env Setup hinzugefügt
+- 💡 "Warum dieses Projekt?" Sektion zur README hinzugefügt
 
 ### Bugfixes
 - 🔧 Vercel Build Fehler behoben (`erasableSyntaxOnly`, `callAmount`)
