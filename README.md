@@ -2,6 +2,10 @@
 
 Echtzeit Multiplayer Texas Hold'em Poker Spiel mit TypeScript und Supabase.
 
+<img width="1164" height="810" alt="image" src="https://github.com/user-attachments/assets/cce23b99-64b6-491c-8d9d-83a37d9dad79" />
+
+<img width="1386" height="865" alt="image" src="https://github.com/user-attachments/assets/06f7d71b-65f2-4809-aad6-5d1e081a48ff" />
+
 ## 🎮 Features
 
 - **Echtzeit-Multiplayer**: Sofortige Synchronisation aller Aktionen
@@ -57,9 +61,6 @@ Dieses Projekt nutzt **Supabase Realtime Broadcast** für die schnelle Kommunika
 3.  Hole dir deine API-Keys unter **Project Settings > API**:
     *   Project URL
     *   `anon` public key
-
-> [!NOTE]
-> Die ursprünglich geplante SQL-Struktur wird in dieser Version noch nicht aktiv genutzt, ist aber für zukünftige Persistenz vorbereitet.
 
 ### 2. Vercel (Hosting & Deployment)
 
